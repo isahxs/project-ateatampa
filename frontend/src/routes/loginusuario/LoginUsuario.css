@@ -1,0 +1,96 @@
+/* Fundo da coluna da imagem */
+.bg-main {
+    background-color: #2b1b17;
+    height: 100vh;
+    overflow: hidden;
+}
+ 
+/* Container do Formulário */
+.cont-cadastro {
+    width: 100%;
+    max-width: 450px;
+    padding: 1rem;
+}
+ 
+.cont-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+ 
+/* Inputs */
+.input-password-wrapper {
+    position: relative;
+}
+
+.input-password-wrapper input {
+    padding-right: 45px;
+}
+
+.toggle-eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+.toggle-eye:hover {
+    color: #800000;
+}
+
+.input-elegante {
+    border: 1px solid #d3c9c9 !important;
+    border-radius: 8px !important;
+    padding: 0.75rem 1rem !important;
+    background-color: #fff !important;
+    color: #333 !important;
+    box-shadow: none !important;
+}
+ 
+.input-elegante:focus {
+    border-color: #800000 !important;
+    outline: none;
+}
+ 
+/* Botão principal em tom Bordô */
+.btn-primario-elegante {
+    background-color: #800000 !important;
+    color: #ffffff !important;
+    border-radius: 25px !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+ 
+.btn-primario-elegante:hover {
+    background-color: #ad2121 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+ 
+.alert-custom {
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.btn-primario-elegante{
+    color: #800000;
+}
+
+.acesso-adm {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.acesso-adm a {
+    font-size: 0.85rem;
+    color: #888;
+    text-decoration: underline;
+}
+
+.acesso-adm a:hover {
+    color: #6D76A6;
+}

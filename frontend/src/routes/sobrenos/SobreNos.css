@@ -1,0 +1,41 @@
+body{
+    background: #F2F0E4;
+}
+
+.sobre-section {
+    padding: 50px 20px;
+}
+
+.sobre-container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #1b1f5e;
+}
+
+.sobre-container h1 {
+    background-color: #D9BD8B;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.sobre-content {
+    background-color: #D9BD8B;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sobre-text p {
+    color: #161C5C;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.sobre-image img {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Story Script', sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

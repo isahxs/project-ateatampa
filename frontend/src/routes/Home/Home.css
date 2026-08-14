@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Story Script', sans-serif;
+}
+ 
+/* HERO DE FOTOS */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 80vh;
+    background-color: #e8e6cc;
+}
+ 
+.grid-images {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    height: 100%;
+}
+ 
+.grid-images img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+/* TEXTO CENTRAL */
+.info {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+ 
+.info h1 {
+    color: #5a3e2b;
+    margin-bottom: 20px;
+}
+ 
+.info button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: none;
+    background: #5a3e2b;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+ 
+.info button:hover {
+    background: #7e5439;
+    opacity: 0.8;
+}
+ 
+.info .whatsapp {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #25D366;
+
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.info .whatsapp:hover {
+    background-color: #1eb956;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+ 
+/* GRID - INSTAGRAM */
+.instagram {
+    padding: 50px;
+    text-align: center;
+}
+ 
+.instagram h2 {
+    font-size: 28px;
+}
+ 
+.instagram span {
+    color: #732257;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+    gap: 70px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.insta-item {
+    display: block;
+    width: fit-content;
+    justify-self: center;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.insta-grid img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    padding: 0; 
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.insta-grid img:hover {
+    border-radius: 10px;
+    background-color: antiquewhite;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+ 
+/* responsividade */
+@media (max-width: 1024px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+ 
+    .grid-images {
+        flex-direction: row;
+    }
+ 
+    .grid-images img {
+        height: 200px;
+    }
+}
+ 
+@media (max-width: 768px) {
+ 
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-images {
+        display: none;
+    }
+ 
+    .insta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .insta-grid img {
+        margin-top: 10px;
+        width: 70%;
+        height: 120px;
+        height: auto;
+        cursor: pointer;
+    }
+};

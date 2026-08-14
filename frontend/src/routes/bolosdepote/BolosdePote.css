@@ -1,0 +1,142 @@
+:root {
+  --botão-text: #8b0000;
+  --cor-text: #5a3e2b;
+}
+ 
+.main-container {
+  padding: 40px;
+  background-color: #e8e6cc;
+  min-height: 100vh;
+}
+ 
+/* TITULO */
+.titulo-area h2 {
+  font-size: 28px;
+  color: var(--cor-text);
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+ 
+.titulo-area p {
+  color: var(--cor-text);
+}
+ 
+/* GRID */
+.itens-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+ 
+/* CARD */
+.card-bolo {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+ 
+.card-bolo:hover {
+  transition: all .2s linear;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+ 
+/* IMAGEM */
+.item--img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+ 
+.item--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+/* BOTÃO */
+.btn-comprar {
+  background-color: var(--botão-text);
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-decoration: none;
+}
+ 
+.btn-comprar:hover {
+  background-color: #a80000;
+}
+ 
+/* PREÇO */
+.item--price {
+  margin-top: 8px;
+  color: var(--botão-text);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+ 
+.item--name {
+  color: #000;
+  font-size: 15px;
+}
+ 
+.details {
+  color: var(--botão-text);
+  font-size: 12px;  
+  cursor: pointer;
+}
+ 
+.details:hover {
+  color: #c00404;
+}
+ 
+ 
+@media (max-width: 768px) {
+  .main-container {
+    padding: 20px;
+  }
+ 
+  .titulo-area h2 {
+    font-size: 22px;
+  }
+ 
+  .titulo-area p {
+    font-size: 14px;
+  }
+ 
+  .item--name{
+    font-size: 15px;
+  }
+ 
+  .details{
+    font-size: 11px;
+  }
+ 
+  .itens-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+ 
+  .itens-area {
+    grid-template-columns: 1fr;
+  }
+ 
+  .item--img {
+    height: 140px;
+  }
+ 
+  .btn-comprar {
+    font-size: 13px;
+    padding: 6px;
+  }
+}

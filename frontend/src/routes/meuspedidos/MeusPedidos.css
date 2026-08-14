@@ -1,0 +1,239 @@
+/* Tela de pedidos vazia */
+.pedidos-wrapper {
+  max-width: 1250px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+
+  min-height: calc(100vh - 280px); 
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.pedidos-box-vazio {
+  background-color: #e2dfdf;
+  border-radius: 15px;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.pedidos-vazio-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 60px 30px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ícone */
+.icone-pedidos-vazio {
+  font-size: 75px;
+  color: #6D76A6; 
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pedidos-vazio-card h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.pedidos-vazio-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* Botão */
+.btn-voltar-compras {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 2px solid #6D76A6;
+  color: #6D76A6;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-voltar-compras:hover {
+  background-color: #6D76A6;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Tela de pedidos principal */
+.titulo-pedidos {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: bold;
+}
+
+.pedidos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-pedido {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+
+.pedido-header {
+    display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.pedido-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pedido-numero {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.pedido-data {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.status-aguardando { 
+    background: #fff3cd; 
+    color: #856404; 
+}
+
+.status-confirmado { 
+    background: #d4edda; 
+    color: #155724; 
+}
+.status-cancelado { 
+    background: #f8d7da; 
+    color: #721c24; 
+}
+
+.pedido-itens-container {
+  background-color: #ece9e6;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.pedido-itens {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pedido-item-linha {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pedido-item-linha:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.item-thumb {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.item-nome {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.item-preco {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.pedido-total {
+  text-align: right;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.pedido-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pedido-total {
+  font-size: 1rem;
+}
+
+.btn-pedir-novamente {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6D76A6;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-pedir-novamente:hover {
+  background-color: #494C8C;
+  opacity: 0.85;
+}

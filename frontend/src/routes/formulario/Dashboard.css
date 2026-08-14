@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+ 
+.bloco{
+    padding: 150px 20px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.container-bloco{
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #161c5c;
+    width: 100%;
+    height: 55vh;
+}
+ 
+.container-bloco h1{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: aliceblue;
+    text-align: center;
+}
+ 
+.titulo{
+    margin-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+    color: aliceblue;
+    width: 95%;
+}
+ 
+.preco-bloco{
+    margin-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+    color: aliceblue;
+    width: 95%;
+}
+ 
+.descricao-bloco{
+    margin-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+    color: aliceblue;
+    width: 95%;
+}
+
+.titulo input,
+.preco-bloco input,
+.descricao-bloco textarea {
+    height: 50px;
+}
+ 
+.img-bolo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: aliceblue;
+}
+ 
+.img-bolo label{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+ 
+.botoes{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.limpar input,
+.enviar input {
+    background-color: #6D76A6;
+    color: aliceblue;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.limpar input:hover,
+.enviar input:hover {
+    background-color: #444b6d;
+}
+ 
+@media (max-width: 768px) {
+
+    .bloco {
+        padding-top: 50px;
+        margin-top: 10px;
+        margin-bottom: -20px;
+    }
+
+ 
+    .container-bloco{
+        justify-content: center;
+        align-items: center;
+        width: 70vh;
+        height: 65vh;
+        border-radius: 60px;
+    }
+ 
+    .titulo input{
+        padding: 10px 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+ 
+    .preco-bloco input{
+        padding: 10px 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+ 
+    .descricao-bloco textarea{
+        padding: 8px 8px;
+        text-align: center;
+        border-radius: 10px;
+    }
+};
+
+@media (max-width: 1440px){
+ 
+    .bloco{
+        padding: 50px;
+        margin-top: 10px;
+    }
+ 
+    .container-bloco{
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 100%;
+    }
+};

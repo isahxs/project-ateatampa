@@ -1,0 +1,166 @@
+.alterar-senha-adm-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Formulário */
+.alterar-senha-adm-form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.alterar-senha-adm-content {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alterar-senha-adm-logo {
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+.alterar-senha-adm-content h2 {
+  color: #161c5c;
+  font-family: serif;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.alterar-senha-adm-content form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Inputs */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.input-group label {
+  font-size: 15px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.input-password-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-password-wrapper input {
+  width: 100%;
+  height: 42px;
+  padding: 0 40px 0 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  font-style: italic;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.input-password-wrapper input:focus {
+  border-color: #161c5c;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-eye:hover {
+  color: #0a0f47;
+}
+
+/* Botões */
+.alterar-senha-adm-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn-salvar-adm {
+  flex: 1;
+  height: 42px;
+  background-color: #161c5c;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-salvar-adm:hover {
+  background-color: #0a0f47;
+}
+
+.btn-cancelar-adm {
+  flex: 1;
+  height: 42px;
+  background-color: transparent;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 15px;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-cancelar-adm:hover {
+  background-color: #f2f2f2;
+}
+
+/* Imagem ao lado */
+.alterar-senha-adm-image-section {
+  flex: 1;
+  height: 100%;
+}
+
+.alterar-senha-adm-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 850px) {
+  .alterar-senha-adm-image-section {
+    display: none;
+  }
+
+  .alterar-senha-adm-form-section {
+    width: 100%;
+  }
+}

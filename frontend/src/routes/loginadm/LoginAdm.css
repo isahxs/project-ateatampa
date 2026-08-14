@@ -1,0 +1,79 @@
+
+/* Fundo da coluna da imagem */
+.bg-main {
+    background-color: #2b1b17;
+    height: 100vh;
+    overflow: hidden;
+}
+ 
+/* Container do Formulário */
+.cont-cadastro {
+    width: 100%;
+    max-width: 450px;
+    padding: 1rem;
+}
+ 
+.cont-logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+ 
+/* Inputs com bordas arredondadas e traço suave */
+.input-password-wrapper {
+    position: relative;
+}
+
+.input-password-wrapper input {
+    padding-right: 45px;
+}
+
+.toggle-eye-adm {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+.toggle-eye-adm:hover {
+    color: #161c5c;
+}
+
+.input-elegante {
+    border: 1px solid #d3c9c9 !important;
+    border-radius: 8px !important;
+    padding: 0.75rem 1rem !important;
+    background-color: #fff !important;
+    color: #333 !important;
+    box-shadow: none !important;
+}
+ 
+.input-elegante:focus {
+    border-color: #161c5c !important;
+    outline: none;
+}
+ 
+/* Botão principal em tom Bordô */
+.btn-primario-adm {
+    background-color: #161c5c;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease;
+}
+ 
+.btn-primario-adm:hover {
+    background-color: #0a0f47;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+ 
+.alert-custom {
+    border-radius: 10px;
+    font-size: 0.9rem;
+}

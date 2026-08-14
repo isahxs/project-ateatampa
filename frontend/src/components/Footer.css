@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+ 
+body {
+    height: 100%;
+}
+ 
+.site-footer{
+    margin-top: auto;
+    width: 100%;
+    background: #732257;
+    color: #d9bd8b;
+    padding: 15px 0;
+    font-family: 'Story Script', sans-serif;
+}
+ 
+.site-footer .content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+ 
+.site-footer .logofooter img{
+    height: 90px;
+}
+ 
+.site-footer .e-mail,
+.site-footer .socials,
+.site-footer .number  {
+    font-size: 18px;
+}
+ 
+.site-footer .icons i{
+    font-size: 22px;
+    display: flex;
+    color: #d9bd8b;
+    gap: 15px;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+ 
+.site-footer .icons i:hover{
+    transform: translateY(-5px);
+}
+ 
+@media (max-width: 600px) {
+    .site-footer .content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        align-items: center;
+    }
+ 
+    .site-footer .logofooter {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+ 
+    .logofooter {
+        text-align: center;
+    }
+ 
+    .site-footer .logofooter img {
+        height: 90px;
+    }
+ 
+    .site-footer .content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
