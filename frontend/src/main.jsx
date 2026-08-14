@@ -39,6 +39,8 @@ import AlterarSenhaAdm from './routes/alterarsenhaadm/AlterarSenhaAdm.jsx';
 
 import AlterarSenhaUsuario from './routes/alterarsenhausuario/AlterarSenhaUsuario.jsx';
 
+import DigitarCodigoUsuario from './routes/digitarcodigousuario/DigitarCodigoUsuario.jsx';
+
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 
 
@@ -108,8 +110,11 @@ const router = createBrowserRouter([
     {
       path: 'dashboard',
       element: <Dashboard />
-    }
-
+    },
+    {
+      path: 'digitarcodigousuario',
+      element: <DigitarCodigoUsuario />
+    },
   ]
 }
 ])
