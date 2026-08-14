@@ -65,17 +65,6 @@ const RecuperarSenhaAdm = () => {
             <button type="submit" className="btn-recuperar-adm" disabled={loading}>
               {loading ? "Enviando..." : "Recuperar senha"}
             </button>
-
-            <div className="text-center mt-2">
-              <span className="text-muted small">Deseja alterar a sua senha? </span>
-              <Link
-                to="/alterarsenhaadm"
-                className="text-decoration-underline fw-bold"
-                style={{ color: '#161C5C' }}
-                >
-                  Alterar senha
-                </Link>
-            </div>
     
             {/* Voltar */}
             <div className="back-link-adm">

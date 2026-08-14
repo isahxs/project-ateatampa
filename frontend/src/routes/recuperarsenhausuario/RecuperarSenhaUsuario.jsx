@@ -66,17 +66,6 @@ const RecuperarSenhaUsuario = () => {
               {loading ? "Enviando..." : "Recuperar senha"}
             </button>
 
-            <div className="text-center mt-2">
-              <span className="text-muted small">Deseja alterar a sua senha? </span>
-              <Link
-                to="/alterarsenhausuario"
-                className="text-decoration-underline fw-bold"
-                style={{ color: '#800000' }} 
-                >
-                Alterar senha
-              </Link>
-            </div>
-
             {/* Voltar */}
             <div className="back-link">
               <Link to="/loginusuario">Voltar para a tela de login</Link>

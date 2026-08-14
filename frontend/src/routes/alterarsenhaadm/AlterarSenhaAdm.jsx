@@ -68,26 +68,6 @@ const AlterarSenhaAdm = () => {
           <h2>Alterar Senha Adm</h2>
 
           <form onSubmit={handleAlterarSenha}>
-            {/* Senha atual */}
-            <div className="input-group">
-              <label>Senha Atual*</label>
-              <div className="input-password-wrapper">
-                <input
-                  type={showSenhaAtual ? "text" : "password"}
-                  placeholder="Insira sua senha atual"
-                  value={senhaAtual}
-                  onChange={(e) => setSenhaAtual(e.target.value)}
-                />
-                <button
-                  type="button"
-                  className="toggle-eye"
-                  onClick={() => setShowSenhaAtual(!showSenhaAtual)}
-                >
-                  {showSenhaAtual ? <FiEyeOff /> : <FiEye />}
-                </button>
-              </div>
-            </div>
-
             {/* Nova senha */}
             <div className="input-group">
               <label>Nova Senha*</label>
